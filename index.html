@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bootstarp-HTML-Blog</title>
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header d-flex align-items-center bg-dark">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a href="/index.html" class="logo d-flex align-items-center text-dark text-decoration-none">
+                <h1 class="text-white">Ultra-Hyphen</h1>
+            </a>
+            <!-- Navbar -->
+            <nav class="main-nav navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>                         
+                    </button>
+                    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rich an derer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kyll lohp</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">sarbi marchu nana kardy</a>
+                                </li>
+                            </ul>                        
+                            <div class="social-link d-flex align-item-center">
+                                <a href="#" class="text-white m-2"><i class="bi bi-facebook"></i></a>
+                                <a href="#"class="text-white m-2"><i class="bi bi-twitter"></i></a>
+                                <a href="#"class="text-white m-2"><i class="bi bi-instagram"></i></a>
+                                <a href="#"class="text-white m-2"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--End Navbar -->
+        </div>
+    </header><!-- End Header -->
+    <!-- Main Page -->
+    <div id="main">
+        <div class="container">
+            <!-- Featured Carousel -->
+            <section id="featured-carousel">
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://placehold.co/1200x800" class="d-block w-100 h-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://placehold.co/1200x800" class="d-block w-100 h-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://placehold.co/1200x800" class="d-block w-100 h-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+            </section><!-- End Featured Carousel -->
+            <!-- Inner Content -->
+            <section id="inner-content">
+                <div class="row mt-5">
+                    <!-- Latest Post -->
+                    <div class="latest-post col-md-9">
+                        <h2 class="text-center border-bottom">Latest Post</h2>
+                        <div class="row">
+                            <div class="main-post col-md-4">
+                                <div class="post-img">
+                                    <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                                    <div class="overlay"></div>
+                                    <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-meta">
+                                    <p>Category<span> // Author //</span><span> // Date //</span></p>
+                                </div>
+                                <h3><a href="/single-page.html">Title</a></h3>
+                                <p>Content</p>
+                                <div class="post-stats">
+                                    <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                                </div>
+                            </div>
+                            <div class="main-post col-md-4">
+                                <div class="post-img">
+                                    <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                                    <div class="overlay"></div>
+                                    <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-meta">
+                                    <p>Category<span> // Author //</span><span> // Date //</span></p>
+                                </div>
+                                <h3><a href="#">Title</a></h3>
+                                <p>Content</p>
+                                <div class="post-stats">
+                                    <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                                </div>
+                            </div>
+                            <div class="main-post col-md-4">
+                                <div class="post-img">
+                                    <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                                    <div class="overlay"></div>
+                                    <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-meta">
+                                    <p>Category<span> // Author //</span><span> // Date //</span></p>
+                                </div>
+                                <h3><a href="#">Title</a></h3>
+                                <p>Content</p>
+                                <div class="post-stats">
+                                    <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                                </div>
+                            </div>
+                            <div class="main-post col-md-4">
+                                <div class="post-img">
+                                    <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                                    <div class="overlay"></div>
+                                    <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-meta">
+                                    <p>Category<span> // Author //</span><span> // Date //</span></p>
+                                </div>
+                                <h3><a href="#">Title</a></h3>
+                                <p>Content</p>
+                                <div class="post-stats">
+                                    <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                                </div>
+                            </div>
+                            <div class="main-post col-md-4">
+                                <div class="post-img">
+                                    <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                                    <div class="overlay"></div>
+                                    <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-meta">
+                                    <p>Category<span> // Author //</span><span> // Date //</span></p>
+                                </div>
+                                <h3><a href="#">Title</a></h3>
+                                <p>Content</p>
+                                <div class="post-stats">
+                                    <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                                </div>
+                            </div>
+                            <div class="main-post col-md-4">
+                                <div class="post-img">
+                                    <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                                    <div class="overlay"></div>
+                                    <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                                </div>
+                                <div class="post-meta">
+                                    <p>Category<span> // Author //</span><span> // Date //</span></p>
+                                </div>
+                                <h3><a href="#">Title</a></h3>
+                                <p>Content</p>
+                                <div class="post-stats">
+                                    <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                                </div>
+                            </div>
+                            <!-- Pagination Link -->
+                            <div class="pagination-link text-center mt-2 mb-2">
+                                <nav class="blog-pagination" aria-label="Pagination">
+                                    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+                                    <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
+                                </nav> 
+                            </div><!-- End Pagination Link -->
+                        </div><!-- End Latest Post Inside Row -->
+                    </div><!-- End Latest Post -->
+                    <!-- Home Sidebar -->
+                    <div class="home-sidebar col-md-3">
+                        <h2 class="text-center border-bottom">Sidebar</h2>
+                        <!-- User Area Widget -->
+                        <div class="widget user-area-widget border border-1 p-2">
+                            <h3 class="widget-heading text-decoration-underline text-center">User Area</h3>
+                            <form action="#" class="p-2">
+                                <div class="mb-3">
+                                    <input type="email" id="username" name="email" class="form-control" placeholder="User Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkbox">
+                                    <label class="form-check-label" for="checkbox">Remember Me</label>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <input type="submit" class="btn btn-primary" value="Login">
+                                </div>
+                                <div class="d-grid gap-2 mt-2">
+                                    <a href="#" class="btn btn-secondary">Register</a>
+                                </div>
+                            </form>
+                        </div><!-- End User Area Widget -->
+                        <!-- About Us Widget -->
+                        <div class="widget about-us-widget border border-1 mt-2 p-2">
+                            <h3 class="widget-heading text-decoration-underline text-center">About Us</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam pariatur, delectus voluptatem hic suscipit voluptas quis ipsam fugiat doloribus dicta ipsum qui quasi sunt sapiente! Perferendis, eaque? Officiis, ipsam. Recusandae.</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>                            
+                        </div><!-- End About Us Widget -->
+                        <!-- Trending Widget -->
+                        <div class="widget tending-widget border border-1 mt-2 p-2">
+                            <h3 class="widget-heading text-decoration-underline text-center">Trending</h3>
+                            <div class="post-trending d-flex align-items-center justify-content-start position-relative">
+                                <img src="https://placehold.co/600x400" class="img-thumbnail" alt="">
+                                <a href="#"><p class="pt-2"><strong>There are three different values for</strong></p></a>
+                                <span class="position-absolute top-20 start-0 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                </span>
+                            </div>
+                            <div class="post-trending d-flex align-items-center justify-content-start position-relative">
+                                <img src="https://placehold.co/600x400" class="img-thumbnail" alt="">
+                                <a href="#"><p class="pt-2"><strong>There are three different values for</strong></p></a>
+                                <span class="position-absolute top-20 start-0 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                </span>
+                            </div>
+                            <div class="post-trending d-flex align-items-center justify-content-start position-relative">
+                                <img src="https://placehold.co/600x400" class="img-thumbnail" alt="">
+                                <a href="#"><p class="pt-2"><strong>There are three different values for</strong></p></a>
+                                <span class="position-absolute top-20 start-0 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                </span>
+                            </div>
+                            <div class="post-trending d-flex align-items-center justify-content-start position-relative">
+                                <img src="https://placehold.co/600x400" class="img-thumbnail" alt="">
+                                <a href="#"><p class="pt-2"><strong>There are three different values for</strong></p></a>
+                                <span class="position-absolute top-20 start-0 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                </span>
+                            </div>
+                            <div class="post-trending d-flex align-items-center justify-content-start position-relative">
+                                <img src="https://placehold.co/600x400" class="img-thumbnail" alt="">
+                                <a href="#"><p class="pt-2"><strong>There are three different values for</strong></p></a>
+                                <span class="position-absolute top-20 start-0 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                </span>
+                            </div>
+                        </div><!-- End Trending Widget -->
+                    </div><!-- End Home Sidebar -->
+                </div> <!-- End Row Inner Content -->
+            </section><!-- End Inner Content -->
+            <!-- Category -->
+            <section id="category">
+                <div class="row border-bottom mt-5">
+                    <div class="col-md-10">
+                        <div class="category-header">
+                            <h2>Category Heading</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="category-cta">
+                            <a href="#">See All Post</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner Category Content-->
+                <div class="row mt-5">
+                    <div class="main-post col-md-3">
+                        <div class="post-img">
+                            <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                            <div class="overlay"></div>
+                            <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                        </div>
+                        <div class="post-meta">
+                            <p>Category<span> // Author //</span><span> // Date //</span></p>
+                        </div>
+                        <h3><a href="#">Title</a></h3>
+                        <p>Content</p>
+                        <div class="post-stats">
+                            <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                        </div>
+                    </div>
+                    <div class="main-post col-md-3">
+                        <div class="post-img">
+                            <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                            <div class="overlay"></div>
+                            <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                        </div>
+                        <div class="post-meta">
+                            <p>Category<span> // Author //</span><span> // Date //</span></p>
+                        </div>
+                        <h3><a href="#">Title</a></h3>
+                        <p>Content</p>
+                        <div class="post-stats">
+                            <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                        </div>
+                    </div>
+                    <div class="main-post col-md-3">
+                        <div class="post-img">
+                            <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                            <div class="overlay"></div>
+                            <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                        </div>
+                        <div class="post-meta">
+                            <p>Category<span> // Author //</span><span> // Date //</span></p>
+                        </div>
+                        <h3><a href="#">Title</a></h3>
+                        <p>Content</p>
+                        <div class="post-stats">
+                            <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                        </div>
+                    </div>
+                    <div class="main-post col-md-3">
+                        <div class="post-img">
+                            <a href="#"><img src="https://placehold.co/600x400" alt="" class="img-fluid"></a>
+                            <div class="overlay"></div>
+                            <a href="#" class="post-like"><i class="bi bi-heart-fill"></i></a>
+                        </div>
+                        <div class="post-meta">
+                            <p>Category<span> // Author //</span><span> // Date //</span></p>
+                        </div>
+                        <h3><a href="#">Title</a></h3>
+                        <p>Content</p>
+                        <div class="post-stats">
+                            <p><i class="bi bi-eye-fill"></i> 0<span> // <i class="bi bi-heart-fill"></i> 0</span> // <span><i class="bi bi-chat-dots-fill"></i> 0</span></p>
+                        </div>
+                    </div>
+                </div><!-- End Inner Category Content-->
+            </section><!-- End Category -->
+        </div><!-- End Container -->
+    </div><!-- End Main Page -->
+
+    <footer id="footer" class="d-flex align-items-center mt-5 bg-dark">
+        <div class="container-fluid">
+            <div class="row pt-3">
+                <div class="copy-text col-md-8">
+                    <p class="text-white">© Copyright,2023. All Rights Reserved. <a href="#" class="text-white">Ultra-Hyphen</a></p>
+                </div>
+                <div class="footer-social-link col-md-4 text-end">
+                    <a href="#" class="ms-2 text-white"><i class="bi bi-facebook"></i></a>
+                    <a href="#"class="ms-2 text-white"><i class="bi bi-twitter"></i></a>
+                    <a href="#"class="ms-2 text-white"><i class="bi bi-instagram"></i></a>
+                    <a href="#"class="ms-2 text-white"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
